@@ -1,0 +1,140 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: hero_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Hero Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: hero_text
+        field:
+          antlers: false
+          display: 'Hero Text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: hero_button
+        field:
+          fields:
+            -
+              handle: button_color
+              field:
+                options:
+                  primary: 'Primary Color'
+                  secondary: 'Secondary Color'
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Button Color'
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_icon
+              field:
+                options:
+                  fa-apple: Apple
+                  fa-google-play: 'Google Play'
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'button iCon'
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_link
+              field:
+                display: 'Button Link'
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: link_target
+              field:
+                options:
+                  _self: Self
+                  _blank: 'New tab'
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Link Target'
+                type: select
+                icon: select
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: button_text
+              field:
+                input_type: text
+                antlers: false
+                display: 'Button text'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+          mode: stacked
+          reorderable: true
+          display: 'Hero Buttons'
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          add_row: 'Add Button'
+      -
+        handle: hero_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Hero Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  template:
+    display: Template
+    fields:
+      -
+        handle: hero_template
+        field:
+          antlers: true
+          display: 'Hero Template'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

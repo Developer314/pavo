@@ -1,0 +1,7 @@
+export_paths:
+  - content
+  - resources/blueprints
+  - resources/fieldsets
+  - resources/views
+  - public/pavo
+  - public/assets

@@ -1,0 +1,12 @@
+title: 'Header Stack'
+data:
+  website_logo: logo.svg
+  menu_right_icons:
+    -
+      icon: fa-apple
+      icon_link: 'http://www.apple.com'
+      icon_target: _blank
+    -
+      icon: fa-android
+      icon_link: 'http://www.google.com'
+      icon_target: _blank

@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: home_introduction_text
+        field:
+          antlers: false
+          display: 'Home Introduction Text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  template:
+    display: Template
+    fields:
+      -
+        handle: home_introduction_template
+        field:
+          antlers: true
+          default: |-
+            <!-- Introduction -->
+                    <div class="pt-4 pb-14 text-center">
+                        <div class="container px-4 sm:px-8 xl:px-4">
+                            <p class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto">{{home_intro:home_introduction_text}}</p>
+                        </div> <!-- end of container -->
+                    </div>
+                    <!-- end of introduction -->
+          display: 'Home Introduction Template'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

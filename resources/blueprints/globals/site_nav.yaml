@@ -1,0 +1,42 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: navigation_html
+        field:
+          antlers: false
+          default: |-
+            <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
+                                    <li>
+                                        <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link page-scroll" href="#features">Features</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link page-scroll" href="#details">Details</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link page-scroll" href="#download">Download</a>
+                                    </li>
+                                </ul>
+          display: 'Navigation Html'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

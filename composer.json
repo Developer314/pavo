@@ -1,0 +1,9 @@
+{
+    "name": "developer314/pavo",
+    "extra": {
+        "statamic": {
+            "name": "Pavo",
+            "description": "Pavi Tailwind starter kit"
+        }
+    }
+}

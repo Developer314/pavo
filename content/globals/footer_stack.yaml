@@ -1,0 +1,40 @@
+title: 'Footer Stack'
+data:
+  footer_text: 'Pavo is a mobile application for marketing automation and you can reach the team at'
+  footer_email: info@revolve314.com
+  footer_social_icons:
+    -
+      social_icon: fa-facebook-f
+      social_link: 'http://www.facebook.com'
+      social_link_target: _blank
+    -
+      social_icon: fa-twitter
+      social_link: 'http://www.twitter.com'
+      social_link_target: _blank
+    -
+      social_icon: fa-pinterest-p
+      social_link: 'http://www.pinterest.com'
+      social_link_target: _blank
+    -
+      social_icon: fa-instagram
+      social_link: 'http://www.instagram.com'
+      social_link_target: _blank
+    -
+      social_icon: fa-youtube
+      social_link: 'http://www.youtube.com'
+      social_link_target: _blank
+  footer_links:
+    -
+      footer_link_target: _self
+      footer_link: 'entry::0c22ce92-cbd2-4935-a95d-f7b1035b973a'
+      footer_link_text: 'Article Detail'
+    -
+      footer_link: 'entry::14a409d0-3fcf-4dc8-9d9c-9a0534a34e25'
+      footer_link_text: 'Privacy Policy'
+      footer_link_target: _self
+    -
+      footer_link: 'entry::13e6d231-c721-4202-9a8e-2270cf2f6c18'
+      footer_link_text: 'Terms & Conditions'
+      footer_link_target: _self
+  copyright_text: 'Copyright © <a href="http://www.revolve314.com" class="no-underline">Revolve 314 Digital</a>'
+  footer_credit_text: 'Distributed by : <a href="http://www.revolve314.com" class="no-underline">Revolve 314 Digital</a>'

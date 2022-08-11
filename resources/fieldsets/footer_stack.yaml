@@ -1,0 +1,158 @@
+title: 'Footer Stack'
+fields:
+  -
+    handle: footer_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Footer Text'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: footer_email
+    field:
+      input_type: email
+      antlers: false
+      display: 'Footer Email'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: footer_social_icons
+    field:
+      fields:
+        -
+          handle: social_icon
+          field:
+            options:
+              fa-facebook-f: Facebook
+              fa-twitter: Twitter
+              fa-pinterest-p: Pinterest
+              fa-instagram: Instagram
+              fa-youtube: Youtube
+            multiple: false
+            clearable: false
+            searchable: true
+            taggable: true
+            push_tags: false
+            cast_booleans: false
+            display: 'Social Icon'
+            type: select
+            icon: select
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: social_link
+          field:
+            display: 'Social Link'
+            type: link
+            icon: link
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: social_link_target
+          field:
+            options:
+              _blank: 'New tab'
+              _self: Self
+            multiple: false
+            clearable: false
+            searchable: true
+            taggable: true
+            push_tags: false
+            cast_booleans: false
+            default: _blank
+            display: 'Social Link Target'
+            type: select
+            icon: select
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+      mode: stacked
+      reorderable: true
+      display: 'Footer Social Icons'
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: footer_links
+    field:
+      fields:
+        -
+          handle: footer_link
+          field:
+            display: 'Footer Link'
+            type: link
+            icon: link
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: footer_link_text
+          field:
+            input_type: text
+            antlers: false
+            display: 'Footer Link Text'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: footer_link_target
+          field:
+            options:
+              _self: Self
+              _blank: 'New Tab'
+            multiple: false
+            clearable: false
+            searchable: true
+            taggable: true
+            push_tags: false
+            cast_booleans: false
+            default: _self
+            display: 'Footer Link Target'
+            type: select
+            icon: select
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+      mode: table
+      reorderable: true
+      display: 'Footer Links'
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: copyright_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Copyright Text'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: footer_credit_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Footer Credit Text'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible

@@ -1,0 +1,65 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: features
+        field:
+          fields:
+            -
+              handle: feature_title
+              field:
+                input_type: text
+                antlers: false
+                display: 'Feature Title'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: feature_text
+              field:
+                antlers: false
+                display: 'Feature Text'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: feature_image
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                display: 'Feature Image'
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+          mode: stacked
+          reorderable: true
+          display: Features
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          add_row: 'Add Feature'
+  template:
+    display: Template
+    fields:
+      -
+        handle: feature_template
+        field:
+          antlers: true
+          display: 'Feature Template'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

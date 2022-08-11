@@ -1,0 +1,75 @@
+title: 'Header Stack'
+fields:
+  -
+    handle: website_logo
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: 'Website Logo'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: menu_right_icons
+    field:
+      fields:
+        -
+          handle: icon
+          field:
+            options:
+              fa-apple: Apple
+              fa-android: Android
+            multiple: false
+            clearable: false
+            searchable: true
+            taggable: false
+            push_tags: false
+            cast_booleans: false
+            display: Icon
+            type: select
+            icon: select
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: icon_link
+          field:
+            display: 'Icon Link'
+            type: link
+            icon: link
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: icon_target
+          field:
+            options:
+              _self: Self
+              _blank: 'New Tab'
+            multiple: false
+            clearable: false
+            searchable: true
+            taggable: true
+            push_tags: false
+            cast_booleans: false
+            default: _self
+            display: Target
+            type: select
+            icon: select
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+      mode: stacked
+      reorderable: true
+      display: 'Menu Right Icons'
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
