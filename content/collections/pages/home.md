@@ -9,8 +9,8 @@ select_global_block_types:
     select_block_types: '{{home_hero:home_hero_template}}'
   -
     select_block_types: '{{home_intro:intro_text_template}}'
-updated_by: cfa2488c-46e7-4087-aafa-6e0ca34a8371
-updated_at: 1660366299
+updated_by: db44bee7-d00b-42fc-8194-c54880ed2880
+updated_at: 1660367701
 block_types: '{{home_intro:home_introduction_template}}'
 block_type:
   -
@@ -56,6 +56,14 @@ block_type:
     type: home_intro
     enabled: true
     edit_template: false
+    template: |-
+      <!-- Introduction -->
+              <div class="pt-4 pb-14 text-center">
+                  <div class="container px-4 sm:px-8 xl:px-4">
+                      <p class="mb-4 text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto">{{intro_text }}</p>
+                  </div> <!-- end of container -->
+              </div>
+              <!-- end of introduction -->
   -
     highlight_title: 'Results driven ground breaking technology'
     highlight_data: |-
@@ -65,6 +73,24 @@ block_type:
     enabled: true
     image: details-1.jpg
     edit_template: false
+    template: |-
+      <!-- Details 1 -->
+              <div id="details" class="pt-12 pb-16 lg:pt-16">
+                  <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+                      <div class="lg:col-span-5">
+                          <div class="mb-16 lg:mb-0 xl:mt-16">
+                              <h2 class="mb-6">{{highlight_title}}</h2>
+                              {{highlight_data}}
+                          </div>
+                      </div> <!-- end of col -->
+                      <div class="lg:col-span-7">
+                          <div class="xl:ml-14">
+                              <img class="inline" src="{{image}}" alt="alternative" />
+                          </div>
+                      </div> <!-- end of col -->
+                  </div> <!-- end of container -->
+              </div>
+              <!-- end of details 1 -->
   -
     features:
       -
@@ -94,6 +120,28 @@ block_type:
     type: features
     enabled: true
     edit_template: false
+    template: |-
+      <!-- Features -->
+              <div id="features" class="cards-1">
+                  <div class="container px-4 sm:px-8 xl:px-4">
+      				{{features}}
+                      <!-- Card -->
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="{{feature_image}}" alt="{{feature_title}}" />
+                          </div>
+                          <div class="card-body">
+                              <h5 class="card-title">{{feature_title}}</h5>
+                              <p class="mb-4">{{feature_text}}</p>
+                          </div>
+                      </div>
+                      <!-- end of card -->
+                      {{/features}}
+
+                     
+                  </div> <!-- end of container -->
+              </div> <!-- end of cards-1 -->
+              <!-- end of features -->
   -
     title: 'Instant results for the marketing department'
     data: |-
@@ -150,6 +198,52 @@ block_type:
     type: highlight_with_lightbox
     enabled: true
     edit_template: false
+    template: |-
+      <!-- Details 2 -->
+              <div class="py-24">
+                  <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+                      <div class="lg:col-span-7">
+                          <div class="mb-12 lg:mb-0 xl:mr-14">
+                              <img class="inline" src="{{image}}" alt="{{title}}" />
+                          </div>
+                      </div> <!-- end of col -->
+                      <div class="lg:col-span-5">
+                          <div class="xl:mt-12">
+                              <h2 class="mb-6">{{title}}</h2>
+                             {{data}}
+                              <a class="btn-solid-reg popup-with-move-anim mr-1.5" href="#details-lightbox">{{light_box_button_text}}</a>
+                              <a class="btn-outline-reg" href="{{button_2_link}}">{{button_2_text}}</a>
+                          </div>
+                      </div> <!-- end of col -->
+                  </div> <!-- end of container -->
+              </div>
+              <!-- end of details 2 -->
+
+
+              <!-- Details Lightbox -->
+              <!-- Lightbox -->
+              <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+                  <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
+                      <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                      <div class="lg:col-span-8">
+                          <div class="mb-12 text-center lg:mb-0 lg:text-left xl:mr-6">
+                              <img class="inline rounded-lg" src="{{popup_image}}" alt="alternative" />
+                          </div>
+                      </div> <!-- end of col -->
+                      <div class="lg:col-span-4">
+                          <h3 class="mb-2">{{popup_title_1}}</h3>
+                          <hr class="w-11 h-0.5 mt-0.5 mb-4 ml-0 border-none bg-indigo-600" />
+                          {{popup_data_1}}
+                          <h4 class="mt-7 mb-2.5">{{popup_title_2}}</h4>
+                          {{popup_data_2}}
+                          
+                          <a class="btn-solid-reg mfp-close page-scroll" target="{{popup_button_1_target}}" href="{{popup_button_link_1}}">{{popup_button_text_1}}</a>
+                          <button class="btn-outline-reg mfp-close as-button" type="button">{{popup_button_text_2}}</button>
+                      </div> <!-- end of col -->
+                  </div> <!-- end of row -->
+              </div> <!-- end of lightbox-basic -->
+              <!-- end of lightbox -->
+              <!-- end of details lightbox -->
   -
     highlight_title: 'Platform integration and life time free updates'
     highlight_data: |-
@@ -160,6 +254,24 @@ block_type:
     type: highlight_block
     enabled: true
     edit_template: false
+    template: |-
+      <!-- Details 1 -->
+              <div id="details" class="pt-12 pb-16 lg:pt-16">
+                  <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+                      <div class="lg:col-span-5">
+                          <div class="mb-16 lg:mb-0 xl:mt-16">
+                              <h2 class="mb-6">{{highlight_title}}</h2>
+                              {{highlight_data}}
+                          </div>
+                      </div> <!-- end of col -->
+                      <div class="lg:col-span-7">
+                          <div class="xl:ml-14">
+                              <img class="inline" src="{{image}}" alt="alternative" />
+                          </div>
+                      </div> <!-- end of col -->
+                  </div> <!-- end of container -->
+              </div>
+              <!-- end of details 1 -->
   -
     numbers:
       -
@@ -237,6 +349,47 @@ block_type:
     type: testimonials
     enabled: true
     edit_template: false
+    template: |-
+      <!-- Testimonials -->
+              <div class="slider-1 py-32 bg-gray">
+                  <div class="container px-4 sm:px-8">
+                      <h2 class="mb-12 text-center lg:max-w-xl lg:mx-auto">{{testimonial_title}}</h2>
+
+                      <!-- Card Slider -->
+                      <div class="slider-container">
+                          <div class="swiper-container card-slider">
+                              <div class="swiper-wrapper">
+      	                        
+      	                        {{testimonials}}
+                                  
+                                  <!-- Slide -->
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                          <img class="card-image" src="{{client_image}}" alt="{{client_name}}" />
+                                          <div class="card-body">
+                                              <p class="italic mb-3">{{testimonial_data}}</p>
+                                              <p class="testimonial-author">{{client_name}}</p>
+                                          </div>
+                                      </div>
+                                  </div> <!-- end of swiper-slide -->
+                                  <!-- end of slide -->
+      							{{/testimonials}}
+                                 
+
+                              </div> <!-- end of swiper-wrapper -->
+
+                              <!-- Add Arrows -->
+                              <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div>
+                              <!-- end of add arrows -->
+
+                          </div> <!-- end of swiper-container -->
+                      </div> <!-- end of slider-container -->
+                      <!-- end of card slider -->
+
+                  </div> <!-- end of container -->
+              </div> <!-- end of slider-1 -->
+              <!-- end of testimonials -->
   -
     pricing_title: 'Pricing options for all budgets'
     pricing_data: 'Our pricing plans are setup in such a way that any user can start enjoying Pavo without worrying so much about costs. They are flexible and work for any type of industry'
@@ -329,6 +482,32 @@ block_type:
     type: pricing_block
     enabled: true
     edit_template: false
+    template: |-
+      <!-- Pricing -->
+              <div id="pricing" class="cards-2">
+                  <div class="absolute bottom-0 h-40 w-full bg-white"></div>
+                  <div class="container px-4 pb-px sm:px-8">
+                      <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">{{pricing_title}}</h2>
+                      <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">{{pricing_data}}</p>
+      				{{pricing_info}}
+                      <!-- Card-->
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="card-title">{{title}}</div>
+                              <div class="price"><span class="currency">{{currency}}</span><span class="value">{{price}}</span></div>
+                              <div class="frequency">{{frequency}}</div>
+                              {{features}}
+                              <div class="button-wrapper">
+                                  <a class="btn-solid-reg page-scroll" href="{{button_link}}" target="{{target}}">{{button_label}}</a>
+                              </div>
+                          </div>
+                      </div> <!-- end of card -->
+                      <!-- end of card -->
+      				{{/pricing_info}}
+                   
+                  </div> <!-- end of container -->
+              </div> <!-- end of cards-2 -->
+              <!-- end of pricing -->
   -
     hero_title: 'Team management mobile applications don’t get much better than Pavo. Download it today'
     hero_image: conclusion-smartphone.png
@@ -348,6 +527,24 @@ block_type:
     type: home_hero
     enabled: true
     edit_template: false
+    template: |-
+      <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+                  <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+                      <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                          <h1 class="h1-large mb-5">{{hero_title}}</h1>
+                          <p class="p-large mb-8">{{hero_text}}</p>
+
+                        {{hero_buttons}}
+                          <a class="btn-solid-lg {{button_color}}" title="{{button_label}}" target="{{link_target}}" href="{{button_link}}"><i class="fab {{button_icon}}"></i>{{button_label}}</a>
+                           {{/hero_buttons}}
+                         
+
+                      </div>
+                      <div class="xl:text-right">
+                          <img class="inline" src="{{hero_image}}" alt="alternative" />
+                      </div>
+                  </div>
+              </header>
 seo_title: 'PAVO Home'
 meta_description: 'Pavo Description'
 meta_keywords: 'SEO,Antler,Website'
