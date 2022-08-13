@@ -2,8 +2,8 @@
     "name": "developer314/pavo",
     "extra": {
         "statamic": {
-            "name": "Pavo",
-            "description": "Pavi Tailwind starter kit"
+            "name": "Pavo Theme Tailwind css Starter Kit",
+            "description": "Pavo Theme Tailwind css Starter Kit"
         }
     }
 }

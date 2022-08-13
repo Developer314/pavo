@@ -20,8 +20,8 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #f1f9fc
-- Buttons, icons - purple #594cda
-- Buttons, icons - red #eb427e
+- Buttons, icons - purple var(--primary_color)
+- Buttons, icons - red var(--secondary_color)
 - Headings text - black #252c38
 - Body text - dark gray #6b747b
 ******************************************/
@@ -32,12 +32,12 @@ Colors:
 
 body,
 p {
-    color: #6b747b;
-    font: 400 1rem/1.625rem "Open Sans", sans-serif;
+    color: var(--body_color);
+    font: var(--font_family);
 }
 
 h1 {
-    color: #252c38;
+    color: var(--heading_1_color);
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3.125rem;
@@ -45,45 +45,45 @@ h1 {
 }
 
 h2 {
-    color: #252c38;
+    color: var(--heading_2_color);
     font-weight: 700;
-    font-size: 2.125rem;
+    font-size: var(--heading_2)rem;
     line-height: 2.625rem;
     letter-spacing: -0.4px;
 }
 
 h3 {
-    color: #252c38;
+    color: var(--heading_3_color);
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: var(--heading_3)rem;
     line-height: 2.25rem;
     letter-spacing: -0.3px;
 }
 
 h4 {
-    color: #252c38;
+    color: var(--heading_4_color);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: var(--heading_4)rem;
     line-height: 2rem;
     letter-spacing: -0.2px;
 }
 
 h5 {
-    color: #252c38;
+    color: var(--heading_5_color);
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: var(--heading_5)rem;
     line-height: 1.625rem;
 }
 
 h6 {
-    color: #252c38;
+    color: var(--heading_6_color);
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.375rem;
 }
 
 .h1-large {
-    font-size: 2.875rem;
+    font-size: var(--heading_1_large)rem;
     line-height: 3.5rem;
 }
 
@@ -98,7 +98,7 @@ h6 {
 }
 
 .bg-gray {
-    background-color: #f1f9fc;
+    background-color: var(--testimonial_slider_background_color);
 }
 
 .container {
@@ -109,9 +109,9 @@ h6 {
 .btn-solid-reg {
     display: inline-block;
     padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-    border: 1px solid #594cda;
+    border: 1px solid var(--primary_color);
     border-radius: 32px;
-    background-color: #594cda;
+    background-color: var(--primary_color);
     color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
@@ -121,18 +121,18 @@ h6 {
 }
 
 .btn-solid-reg:hover {
-    border: 1px solid #594cda;
+    border: 1px solid var(--primary_color);
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: var(--primary_color); /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
 .btn-solid-lg {
     display: inline-block;
     padding: 1.625rem 2.75rem 1.625rem 2.75rem;
-    border: 1px solid #594cda;
+    border: 1px solid var(--primary_color);
     border-radius: 32px;
-    background-color: #594cda;
+    background-color: var(--primary_color);
     color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
@@ -145,9 +145,9 @@ h6 {
 }
 
 .btn-solid-lg:hover {
-    border: 1px solid #594cda;
+    border: 1px solid var(--primary_color);
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: var(--primary_color); /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
@@ -163,14 +163,14 @@ h6 {
 }
 
 .btn-solid-lg.secondary {
-    border: 1px solid #eb427e;
-    background-color: #eb427e;
+    border: 1px solid var(--secondary_color);
+    background-color: var(--secondary_color);
 }
 
 .btn-solid-lg.secondary:hover {
-    border: 1px solid #eb427e;
+    border: 1px solid var(--secondary_color);
     background: transparent;
-    color: #eb427e; /* needs to stay here because of the color property of a tag */
+    color: var(--secondary_color); /* needs to stay here because of the color property of a tag */
 }
 
 .btn-outline-reg {
@@ -234,7 +234,7 @@ h6 {
 }
 
 .list .fas {
-    color: #594cda;
+    color: var(--primary_color);
     font-size: 0.75rem;
     line-height: 1.625rem;
 }
@@ -351,9 +351,9 @@ input[type="checkbox"] {
     display: inline-block;
     width: 100%;
     height: 3.25rem;
-    border: 1px solid #594cda;
+    border: 1px solid var(--primary_color);
     border-radius: 32px;
-    background-color: #594cda;
+    background-color: var(--primary_color);
     color: #252c38;
     font-weight: 600;
     font-size: 0.875rem;
@@ -573,7 +573,7 @@ input[type="checkbox"] {
 /*    Header     */
 /*****************/
 .header {
-    background: linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1));
+    background: linear-gradient(var(--header_background_color_1), var(--header_background_color_2));
 }
 
 /********************/
@@ -636,7 +636,7 @@ input[type="checkbox"] {
 }
 
 .lightbox-basic .btn-solid-reg.mfp-close:hover {
-    color: #594cda;
+    color: var(--primary_color);
 }
 /* end of action Button */
 
@@ -792,7 +792,7 @@ input[type="checkbox"] {
 
 .cards-2 .card .card-title {
     margin-bottom: 1rem;
-    color: #eb427e;
+    color: var(--secondary_color);
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.875rem;
@@ -851,7 +851,7 @@ input[type="checkbox"] {
     position: relative;
     width: 13.75rem;
     padding: 0.3125rem 0 0.3125rem 4.125rem;
-    background-color: #eb427e;
+    background-color: var(--secondary_color);
     color: #ffffff;
     -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
@@ -1020,7 +1020,7 @@ a:hover.back-to-top {
     .navbar.top-nav-collapse {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        background-color: #f1f9fc;
+        background-color: var(--sticky_bar_background_color);
     }
 
     .offcanvas-collapse {

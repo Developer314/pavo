@@ -1,0 +1,89 @@
+title: Styles
+data:
+  header_background_color_1: '#EEAEE5'
+  header_background_color_2: 'rgba(255, 255, 255, 1)'
+  body_color: '#6B747B'
+  primary_color: '#594CDA'
+  secondary_color: '#EB427D'
+  sticky_bar_background_color: '#F1F9FC'
+  testimonial_slider_background_color: '#F1F9FC'
+  heading_1_color: '#252C38'
+  heading_2_color: '#252C38'
+  heading_3_color: '#252C38'
+  heading_4_color: '#252C38'
+  heading_5_color: '#252C38'
+  paragraph_small: 0.875
+  paragraph_large: 1.125
+  heading_1: 2.5
+  heading_1_large: 2.875
+  heading_2: 2.125
+  heading_3: 1.75
+  heading_4: 1.5
+  heading_5: 1.25
+  heading_6: 1
+  font_links: |-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="pavo/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="pavo/css/swiper.css" rel="stylesheet" />
+    <link href="pavo/css/magnific-popup.css" rel="stylesheet" />
+    <link href="pavo/css/styles.css" rel="stylesheet" />
+  font_family: '400 1rem/1.625rem "Open Sans", sans-serif'
+  template: |-
+    <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+            <!-- SEO Meta Tags -->
+            <meta name="title" content="{{seo_title}}" />
+            <meta name="description" content="{{meta_description}}" />
+            <meta name="keywords" content="{{meta_keywords}}">
+            
+
+            <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+            <meta property="og:site_name" content="{{og_site_name}}" /> <!-- website name -->
+            <meta property="og:site" content="{{og_site}}" /> <!-- website link -->
+            <meta property="og:title" content="{{og_title}}" /> <!-- title shown in the actual shared post -->
+            <meta property="og:description" content="{{og_description}}" /> <!-- description shown in the actual shared post -->
+            <meta property="og:image" content="{{og_image}}" /> <!-- image link, make sure it's jpg -->
+            <meta property="og:url" content="{{og_url}}" /> <!-- where do you want your post to link to -->
+            <meta name="twitter:card" content="{{twitter_card}}" /> <!-- to have large image post format in Twitter -->
+
+            <!-- Webpage Title -->
+            <title>{{ title ?? site:name }}</title>
+    <style>
+    	        
+                	 :root {
+    	        --header_background_color_1:{{styles:styles:header_background_color_1}};
+    	        --header_background_color_2:{{styles:header_background_color_2}};
+    	        --body_color:{{styles:body_color}};
+    	        --primary_color:{{styles:primary_color}};
+    	        --secondary_color:{{styles:secondary_color}};
+    	        --sticky_bar_background_color:{{styles:sticky_bar_background_color}};
+    	        --testimonial_slider_background_color:{{styles:testimonial_slider_background_color}};
+    	        --heading_1_color:{{styles:heading_1_color}};
+    	        --heading_2_color:{{styles:heading_2_color}};
+    	        --heading_3_color:{{styles:heading_3_color}};
+    	        --heading_4_color:{{styles:heading_4_color}};
+    	        --heading_5_color:{{styles:heading_5_color}};
+    	        --paragraph_small:{{styles:paragraph_small}};
+    	        --paragraph_large:{{styles:paragraph_large}};
+    	        --heading_1:{{styles:heading_1}};
+    	        --heading_1_large:{{heading_1_large}};
+    	        --heading_2:{{styles:heading_2}};
+    	        --heading_3:{{styles:heading_3}};
+    	        --heading_4:{{styles:heading_4}};
+    	        --heading_5:{{styles:heading_5}};
+    	        --heading_6:{{styles:heading_6}};
+    	        --font_family:{{styles:font_family}}
+    	        
+    	        
+    	        
+    	        }
+    	        
+    	        </style>
+            
+    			{{styles:font_links}}
+
+     <!-- Favicon  -->
+           <link rel="icon" href="{{header_stack:fav_icon}}" />
