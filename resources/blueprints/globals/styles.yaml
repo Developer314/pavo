@@ -1,0 +1,350 @@
+sections:
+  main:
+    display: 'Site Colors'
+    fields:
+      -
+        handle: header_background_color_1
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Header Background Color 1'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_background_color_2
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Header Background Color 2'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: body_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Body Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: primary_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Primary Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: secondary_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Secondary Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: sticky_bar_background_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Sticky Bar background Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: testimonial_slider_background_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Testimonial Slider Background Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_1_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Heading 1 Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_2_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Heading 2 Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_3_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Heading 3 Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_4_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Heading 4 Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_5_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Heading 5 Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  font_size:
+    display: 'Font Size'
+    fields:
+      -
+        handle: paragraph_small
+        field:
+          input_type: number
+          antlers: false
+          display: 'Paragraph Small'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: paragraph_large
+        field:
+          input_type: number
+          antlers: false
+          display: 'Paragraph Large'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_1
+        field:
+          input_type: number
+          antlers: false
+          display: 'Heading 1'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_1_large
+        field:
+          input_type: number
+          antlers: false
+          default: '2.875'
+          display: 'Heading 1 Large'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_2
+        field:
+          input_type: number
+          antlers: false
+          display: 'Heading 2'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_3
+        field:
+          input_type: number
+          antlers: false
+          display: 'Heading 3'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_4
+        field:
+          input_type: number
+          antlers: false
+          display: 'Heading 4'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_5
+        field:
+          input_type: number
+          antlers: false
+          display: 'Heading 5'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: heading_6
+        field:
+          input_type: number
+          antlers: false
+          display: 'Heading 6'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  fonts:
+    display: Fonts
+    fields:
+      -
+        handle: font_links
+        field:
+          antlers: false
+          display: 'Font Links'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: font_family
+        field:
+          input_type: text
+          antlers: false
+          display: 'Font Family'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  template:
+    display: Template
+    fields:
+      -
+        handle: template
+        field:
+          antlers: true
+          default: |-
+            <style>
+            	       
+                        	        :root {
+            	        
+            	        
+            	        --header_background_color_1:{{styles:styles:header_background_color_1}};
+            	        --header_background_color_2:{{styles:header_background_color_2}};
+            	        --body_color:{{styles:body_color}};
+            	        --primary_color:{{styles:primary_color}};
+            	        --secondary_color:{{styles:secondary_color}};
+            	        --sticky_bar_background_color:{{styles:sticky_bar_background_color}};
+            	        --testimonial_slider_background_color:{{styles:testimonial_slider_background_color}};
+            	        --heading_1_color:{{styles:heading_1_color}};
+            	        --heading_2_color:{{styles:heading_2_color}};
+            	        --heading_3_color:{{styles:heading_3_color}};
+            	        --heading_4_color:{{styles:heading_4_color}};
+            	        --heading_5_color:{{styles:heading_5_color}};
+            	        --paragraph_small:{{styles:paragraph_small}};
+            	        --paragraph_large:{{styles:paragraph_large}};
+            	        --heading_1:{{styles:heading_1}};
+            	        --heading_1_large:{{heading_1_large}};
+            	        --heading_2:{{styles:heading_2}};
+            	        --heading_3:{{styles:heading_3}};
+            	        --heading_4:{{styles:heading_4}};
+            	        --heading_5:{{styles:heading_5}};
+            	        --heading_6:{{styles:heading_6}};
+            	        --font_family:{{styles:font_family}}
+            	        
+            	        
+            	        
+            	        }
+            	        
+            	        </style>
+                    
+            			{{styles:font_urls}}
+            			{{font_url}}
+            			{{/styles:font_urls}}
+          display: Template
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
